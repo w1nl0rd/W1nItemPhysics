@@ -1,0 +1,7 @@
+{
+  "package": "ru.w1nlord.w1nitemphysics.mixin",
+  "mixins": [
+    "ItemEntityRendererMixin",
+    "ItemEntityRenderStateMixin"
+  ]
+}

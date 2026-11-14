@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "${id}",
+	"version": "${version}",
+	"name": "${name}",
+	"description": "Физика предметов с 2 режимами",
+	"authors": [
+		"w1nlord"
+	],
+	"contact": {
+		"homepage": "https://t.me/w1nlord",
+		"sources": "https://github.com/w1nl0rd/W1nItemPhysics/tree/1.21.4",
+		"issues": "https://github.com/w1nl0rd/W1nItemPhysics/issues"
+	},
+	"license": "MIT",
+	"entrypoints": {
+		"main": [
+			"${maven_group}.W1nItemPhysics"
+		],
+		"modmenu": [
+			"${maven_group}.screen.ConfigScreen"
+		]
+	},
+	"mixins": [
+		"${id}.mixins.json"
+	]
+}
