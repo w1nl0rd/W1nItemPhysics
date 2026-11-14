@@ -27,7 +27,7 @@ public final class Config {
     }
 
     public static void setMode(Mode mode) {
-        data.mode = mode == null ? Mode.NORMAL : mode;
+        data.mode = mode == null ? Mode.TWO_D : mode;
         save();
     }
 

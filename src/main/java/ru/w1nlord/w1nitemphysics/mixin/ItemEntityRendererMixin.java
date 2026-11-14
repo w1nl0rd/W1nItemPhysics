@@ -52,8 +52,8 @@ public abstract class ItemEntityRendererMixin {
     @ModifyArg(method = "render(Lnet/minecraft/client/render/entity/state/ItemEntityRenderState;Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;I)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/util/math/MatrixStack;translate(FFF)V"), index = 1)
     private float modifyHeight(float y) {
         return switch (Config.getMode()) {
-            case NORMAL, TWO_D -> y;
-            case THREE_D -> 0.1F;
+            case NORMAL -> y;
+            case THREE_D, TWO_D -> 0.1F;
         };
     }
 }
