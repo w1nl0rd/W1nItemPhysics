@@ -14,7 +14,7 @@ public final class Config {
     private Config() {}
 
     public static final class Data {
-        public Mode mode = Mode.NORMAL;
+        public Mode mode = Mode.TWO_D;
     }
 
 
