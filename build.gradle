@@ -1,3 +1,4 @@
+
 plugins {
     id 'fabric-loom' version "${loom_version}"
 }
@@ -11,19 +12,21 @@ base {
 
 repositories {
     mavenCentral()
+
     maven {
-        url = "https://maven.terraformersmc.com/releases/"
+        url = 'https://maven.terraformersmc.com/releases/'
     }
 }
 
 dependencies {
-    modCompileOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
-}
 
+    modCompileOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
+}
 
 processResources {
     inputs.property "id", project.mod_id

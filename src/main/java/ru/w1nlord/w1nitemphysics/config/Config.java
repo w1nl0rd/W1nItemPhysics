@@ -1,14 +1,15 @@
 package ru.w1nlord.w1nitemphysics.config;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static net.minecraft.client.render.model.json.ModelVariantMap.GSON;
-
 public final class Config {
     private static final Path PATH = FabricLoader.getInstance().getConfigDir().resolve("w1nitemphysics.json");
+    private static final Gson GSON = new GsonBuilder().create();
     private static Data data = new Data();
 
     private Config() {}
